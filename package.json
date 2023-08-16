@@ -6,8 +6,7 @@
 	"dependencies": {
 		"ps-node": "^0.1.6",
 		"reflect-metadata": "^0.1.13",
-		"tsyringe": "^4.8.0",
-		"winplayer-node": "^1.0.6"
+		"tsyringe": "^4.8.0"
 	},
 	"devDependencies": {
 		"@types/ps-node": "^0.1.1",
