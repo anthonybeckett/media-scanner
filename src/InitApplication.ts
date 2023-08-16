@@ -5,7 +5,6 @@ import { autoInjectable } from 'tsyringe';
 @autoInjectable()
 export default class InitApplication{
 
-    //_application: Application | null = null;
     _application: Application;
     _runningMediaApp: string | null = null;
     _serial: Serial | null;
@@ -20,9 +19,9 @@ export default class InitApplication{
         }
     ];
 
-    constructor(application: Application){
+    constructor(application: Application, serial: Serial){
         this._application = application;
-        this._serial = new Serial('COM5', 9600);
+        this._serial = serial;
 
         this._serial.sendMessage("Connecting");
     }
