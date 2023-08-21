@@ -4,8 +4,10 @@
 		"build": "npx tsc"
 	},
 	"dependencies": {
+		"@types/serialport": "^8.0.2",
 		"ps-node": "^0.1.6",
 		"reflect-metadata": "^0.1.13",
+		"serialport": "^11.0.1",
 		"tsyringe": "^4.8.0"
 	},
 	"devDependencies": {

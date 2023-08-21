@@ -8,7 +8,5 @@ container.register<Serial>(Serial, {useValue: new Serial(deviceConfig.port, devi
 
 const app = container.resolve(InitApplication);
 
-await app.initialise();
-
 app.run();
 
